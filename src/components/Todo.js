@@ -1,10 +1,11 @@
 import React from 'react';
 
 
-const Todo = ()=>{
+const Todo = (props)=>{
+    
     return(
         <div className="todo">
-            <li className="todo-item">Heyy</li>
+            <li className="todo-item">{props.todo.text}</li>
             <button className="complete-btn">
                 <i className="fas fa-check"></i>
             </button>
